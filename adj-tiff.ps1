@@ -26,7 +26,7 @@ function Create-Surveyname($filename) {
       $i++
 
       #カウンターが1桁だった場合は2桁になるようにゼロ埋めする
-      if ( $i.Length -eq 1 ) {
+      if ( $i.Length -ne 2 ) {
          $n = "0" + $i.ToString()
       }else{
          $n = $i.ToString()
