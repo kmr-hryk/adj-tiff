@@ -41,7 +41,7 @@ function Create-Surveyname($filename) {
 
 }
 
-Get-ChildItem -Name *.tif | ForEach-Object {
+Get-ChildItem -Name *.tif | Sort-Object | ForEach-Object {
    #ファイル名から拡張子とカッコを取り除く
    $basename = Get-Basename($_)
 
